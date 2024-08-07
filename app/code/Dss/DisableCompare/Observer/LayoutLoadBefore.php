@@ -12,7 +12,6 @@
  * @author     Extension Team
  * @copyright Copyright (c) 2024 Digit Software Solutions. ( https://digitsoftsol.com )
  */
-
  namespace Dss\DisableCompare\Observer;
 
  use Dss\DisableCompare\Helper\Data as ModuleHelper;
@@ -30,7 +29,6 @@ class LayoutLoadBefore implements ObserverInterface
     public function __construct(protected ModuleHelper $moduleHelper)
     {
     }
- 
     /**
      * ModuleHelper observer
      *
