@@ -1,5 +1,5 @@
 {
-  "name": "Dss/disable-compare",
+  "name": "Dss/m2-disable-compare",
   "description": "disable compare for magento 2",
   "type": "magento2-module",
   "version": "0.0.1",
