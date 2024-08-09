@@ -12,9 +12,9 @@
  * @author     Extension Team
  * @copyright Copyright (c) 2024 Digit Software Solutions. ( https://digitsoftsol.com )
  */
- namespace Dss\DisableCompare\Observer;
+namespace Dss\DisableCompare\Observer;
 
- use Dss\DisableCompare\Helper\Data as ModuleHelper;
+use Dss\DisableCompare\Helper\Data as ModuleHelper;
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
 
@@ -26,8 +26,9 @@ class LayoutLoadBefore implements ObserverInterface
      * @param ModuleHelper $moduleHelper
      */
  
-    public function __construct(protected ModuleHelper $moduleHelper)
-    {
+    public function __construct(
+        protected ModuleHelper $moduleHelper
+    ) {
     }
     /**
      * ModuleHelper observer
@@ -35,7 +36,7 @@ class LayoutLoadBefore implements ObserverInterface
      * @param Observer $observer
      * @return void
      */
-    public function execute(Observer $observer)
+    public function execute(Observer $observer): void
     {
         $disableCompare = $this->moduleHelper->isEnabled();
         if ($disableCompare) {
